@@ -1,0 +1,18 @@
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <mat-card *ngFor="let project of projects" class="project-card">
+      <mat-card-header>
+        <mat-card-title>{{ project.title }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="project.image" alt="{{ project.title }}">
+      <mat-card-content>
+        <p>{{ project.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button color="primary" [href]="project.github" target="_blank">GitHub</a>
+        <a mat-button color="accent" [href]="project.demo" target="_blank">Live Demo</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</section>

@@ -1,0 +1,69 @@
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+
+  background: linear-gradient(-45deg, #1a1433, #221b44, #0f1629, #1e1b36);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+
+  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00e5ff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 229, 255, 0.2);
+}
+
+mat-card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00e5ff;
+}
+
+mat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+mat-card-content {
+  padding: 15px;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}

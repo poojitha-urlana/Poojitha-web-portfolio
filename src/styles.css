@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a[mat-button] {
+  color: white;
+  font-weight: 500;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+a[mat-button]:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}

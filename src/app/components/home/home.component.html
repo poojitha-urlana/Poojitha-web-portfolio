@@ -1,0 +1,46 @@
+<!-- <header class="site-header">
+  <nav>
+    <h2 class="logo">Poojitha</h2>
+    <ul class="nav-links">
+      <li><a routerLink="/" class="nav-link">Home</a></li>
+      <li><a routerLink="/projects" class="nav-link">Projects</a></li>
+      <li><a routerLink="/contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+</header> -->
+
+<!-- Particle background -->
+<div id="tsparticles" class="particle-background"></div>
+
+<section class="home">
+  <div class="hero">
+    <div class="profile-container">
+      <img src="assets/profile.jpg" alt="Poojitha Urlana" class="profile-img" />
+    </div>
+    <div class="hero-content">
+      <h1 class="title">
+        Hi, I'm <span class="name-highlight">Poojitha Urlana</span>
+      </h1>
+      <p class="subtitle">{{ currentText }}</p>
+      <p class="description">
+        I build modern, responsive web applications with Angular, Spring Boot, and cutting-edge technologies.
+      </p>
+      <div class="cta-buttons">
+        <button mat-raised-button class="primary-btn" routerLink="/projects">View My Work</button>
+        <button mat-stroked-button class="secondary-btn" routerLink="/contact">Contact Me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-about></app-about>
+<app-projects></app-projects>
+<app-skills></app-skills>
+<app-experience></app-experience>
+<app-cerficates></app-cerficates>
+<app-contact></app-contact>

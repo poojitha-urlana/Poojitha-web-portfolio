@@ -1,0 +1,11 @@
+<section class="certificates">
+  <h2>Certificates</h2>
+  <div class="certificates-grid">
+    <div class="certificate-card" *ngFor="let cert of certificates">
+      <img [src]="cert.image" [alt]="cert.title + ' certificate'" loading="lazy"  alt="cer"/>
+      <h3>{{ cert.title }}</h3>
+      <p class="issuer">Issued by: {{ cert.issuer }}</p>
+      <p class="date">{{ cert.date }}</p>
+    </div>
+  </div>
+</section>
