@@ -32,6 +32,13 @@ export class ProjectsComponent {
       description: 'An AI-based safety alert and incident reporting system with real-time location tracking.',
       github: 'https://github.com/yourusername/safety-net',
       demo: 'https://safety-net-demo.com'
+    },
+    {
+      title: 'Safety Net',
+      image: 'assets/images/safety-net.jpg',
+      description: 'An AI-based safety alert and incident reporting system with real-time location tracking.',
+      github: 'https://github.com/yourusername/safety-net',
+      demo: 'https://safety-net-demo.com'
     }
   ];
 }
